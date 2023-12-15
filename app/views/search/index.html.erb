@@ -1,4 +1,8 @@
-<h1><%= @nation %></h1>
+<%= link_to "Home", root_path %>
+<div id="nation_welcome", align="center">
+  <h1><%= @nation %></h1>
+  <p>There are <%= @count %> characters for the <%= @nation %></p>
+</div>
 
 <div id="people", align="center">
   <% @persons.each do |person| %>
