@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Search Index" do
-  it " Will display the characters of said nation" do
+  it " Will display the characters of said nation", :vcr do
     visit root_path
 
     select("Fire Nation", from: "nation")

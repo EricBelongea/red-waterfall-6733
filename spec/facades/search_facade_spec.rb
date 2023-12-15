@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Search Facade" do
-  it "Can return people by nation" do
+  it "Can return people by nation", :vcr do
     fire_nation = SearchFacade.find_by_nation("fire+nation")
 
     person = fire_nation.first
