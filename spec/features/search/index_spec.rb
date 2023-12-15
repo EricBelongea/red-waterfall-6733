@@ -10,6 +10,11 @@ RSpec.describe "Search Index" do
 
     expect(current_path).to eq(search_path)
 
-    expect(page).to have_content("There are 97 characters for the fire+nation")
+    expect(page).to have_content("Fire Nation")
+    expect(page).to have_link("Home")
+    expect(page).to have_content("Azula")
+    # expect(page).to_not have_content("Katara")
+
+    expect(page).to have_content("There are 97 characters for the Fire Nation")
   end
 end

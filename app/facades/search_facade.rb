@@ -5,4 +5,8 @@ class SearchFacade
       Person.new(person)
     end
   end
+# This could be the Facade Sin, I want a pretty dynamic name to display. 
+  def self.format_nation(nation_params)
+    nation_params.split('+').map(&:capitalize).join(' ')
+  end
 end
