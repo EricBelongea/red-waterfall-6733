@@ -10,20 +10,12 @@
     <h3><%= person.name %></h3>
     <p><%= person.affiliation %></p>
     <b>Allies:</b>
-    <% if person.allies == [] %>
-      <p> None </p>
-    <% else %>
-      <% person.allies.each do |ally| %>
-        <p><%= ally %></p>
-      <% end %>
+    <% person.allies.each do |ally| %>
+      <p><%= ally %></p>
     <% end %>
     <b>Enemies:</b>
-    <% if person.enemies == [] %>
-      <p> None </p>
-    <% else %>
-      <% person.enemies.each do |enemy| %>
-        <p><%= enemy %></p>
-      <% end %>
+    <% person.enemies.each do |enemy| %>
+      <p><%= enemy %></p>
     <% end %>
   <% end %>
 </div>
