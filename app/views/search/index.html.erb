@@ -11,7 +11,7 @@
     <p><%= person.affiliation %></p>
     <b>Allies:</b>
     <% if person.allies == [] %>
-      <p> </p>
+      <p> None </p>
     <% else %>
       <% person.allies.each do |ally| %>
         <p><%= ally %></p>
@@ -19,7 +19,7 @@
     <% end %>
     <b>Enemies:</b>
     <% if person.enemies == [] %>
-      <p> </p>
+      <p> None </p>
     <% else %>
       <% person.enemies.each do |enemy| %>
         <p><%= enemy %></p>
