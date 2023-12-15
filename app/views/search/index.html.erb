@@ -1,0 +1,17 @@
+<h1><%= @nation %></h1>
+
+<div id="people", align="center">
+  <% @persons.each do |person| %>
+    <img src="<%= h(person.photoUrl) %>" >
+    <h3><%= person.name %></h3>
+    <p><%= person.affiliation %></p>
+    <b>Allies:</b>
+    <% person.allies.each do |ally| %>
+      <p><%= ally %></p>
+    <% end %>
+    <b>Enemies:</b>
+    <% person.enemies.each do |enemy| %>
+      <p><%= enemy %></p>
+    <% end %>
+  <% end %>
+</div>
